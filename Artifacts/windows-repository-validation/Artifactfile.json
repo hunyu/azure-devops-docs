@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+  "title": "Repository Validation",
+  "description": "Verifies that this custom artifact repository can deploy to a Windows virtual machine.",
+  "publisher": "hunyu",
+  "tags": [
+    "Windows",
+    "Validation"
+  ],
+  "targetOsType": "Windows",
+  "runCommand": {
+    "commandToExecute": "powershell.exe -ExecutionPolicy Bypass -File install.ps1"
+  }
+}
